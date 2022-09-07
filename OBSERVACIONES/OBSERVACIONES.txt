@@ -1,0 +1,8 @@
+6 escenarios completos que funcionan correctamente, hay unos escenarios que estas incompletos
+porque a medida que ibamos desarrollando los escenarios tuvimos varios inconvenientes que no 
+logramos resolver tales como los identificadores en la pagina de bon bonite que fue como el impedimento mas frecuente.
+
+entonces para no perder el trabajo que llevabamos ya que hay buen código y fue esfuerzo y tiempo que le dedicamos a la realización
+estos pues decidimos dejarlos para que ustedes lo pudieran revisar y valorar
+
+pero como dije anteriormente el requerimiento de los escenarios estan completos y funcionan perfectamente

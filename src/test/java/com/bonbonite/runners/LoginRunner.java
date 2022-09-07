@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/myaccount/login.feature",
         glue = "com.bonbonite.stepsdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@CP_031_Logout_Successful"
+        snippets = CucumberOptions.SnippetType.CAMELCASE
+
 )
 public class LoginRunner {
 }
