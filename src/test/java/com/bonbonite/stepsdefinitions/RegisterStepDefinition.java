@@ -43,8 +43,8 @@ public class RegisterStepDefinition {
         );
     }
 
-    @Then("customer should see error message and registration form")
-    public void customerShouldSeeErrorMessageAndRegistrationForm(Map<String ,String> compare) {
+    @Then("customer should see error message registration form")
+    public void customerShouldSeeErrorMessageRegistrationForm(Map<String ,String> compare) {
         theActorInTheSpotlight().should(
                 seeThat("the displayed error", LoginAndRegisterCompare.lblError(), equalTo(compare.get("lbl_error"))),
                 seeThat("the displayed label the register form", LoginAndRegisterCompare.lblRegisterForm(), equalTo(compare.get("lbl_register_form")))
