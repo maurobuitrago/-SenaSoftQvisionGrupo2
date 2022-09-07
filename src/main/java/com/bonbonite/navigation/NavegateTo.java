@@ -12,4 +12,11 @@ public class NavegateTo {
                 Open.browserOn().the(BonBoniteGoToLoginAndRegisterSection.class)
         );
     }
+
+    public static Performable theBonBoniteGoToShoesProductsSection(){
+        return Task.where(
+                "the client pablo opens Bon Bonite products section",
+                Open.browserOn().the(BonBoniteGoToProductsSection.class)
+        );
+    }
 }

@@ -28,6 +28,11 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().attemptsTo(EnterCredentialsLoginSection.theLoginForm(credentials));
     }
 
+    @When("user enters invalid credentials")
+    public void userEntersInvalidCredentials(Map<String,String> credentials) {
+        OnStage.theActorInTheSpotlight().attemptsTo(EnterCredentialsLoginSection.theLoginForm(credentials));
+    }
+
     @Then("customer should see error message login form")
     public void customerShouldSeeErrorMessageLoginForm(Map<String,String> compare) {
         theActorInTheSpotlight().should(
