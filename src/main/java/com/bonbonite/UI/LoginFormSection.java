@@ -13,4 +13,8 @@ public class LoginFormSection {
 
     public static final Target BTN_LOGIN = Target.the("click the button login form")
             .located(By.name("login"));
+
+    public static final Target LBL_LOGIN_FORM = Target.the("the label login form")
+            .located(By.xpath("//h2[text() = \"Acceder\"]"));
+
 }

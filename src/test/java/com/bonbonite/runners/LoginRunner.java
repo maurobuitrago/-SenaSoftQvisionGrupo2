@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/login.feature",
         glue = "com.bonbonite.stepsdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        tags = "@CP_004_Login_Unsatisfactory"
 )
 public class LoginRunner {
 }

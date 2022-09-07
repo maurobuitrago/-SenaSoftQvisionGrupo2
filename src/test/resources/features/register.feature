@@ -25,7 +25,7 @@ Feature: Register
       | document_number | <document_number> |
       | email           | <email>           |
       | password        | <password>        |
-    Then customer should see error message and registration form
+    Then customer should see error message registration form
       | lbl_error         | <lbl_error>         |
       | lbl_register_form | <lbl_register_form> |
 
