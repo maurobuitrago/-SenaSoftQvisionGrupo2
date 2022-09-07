@@ -8,8 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/myaccount/register.feature",
         glue = "com.bonbonite.stepsdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = " @CP_002_Register_Unsatisfactory"
+        snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class RegisterRunner {
 }
