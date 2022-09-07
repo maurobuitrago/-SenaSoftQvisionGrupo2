@@ -3,6 +3,7 @@ package com.bonbonite.stepsdefinitions;
 
 import com.bonbonite.questions.LoginAndRegisterCompare;
 import com.bonbonite.tasks.EnterCredentialsLoginSection;
+import com.bonbonite.tasks.Logout;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -40,6 +41,18 @@ public class LoginStepDefinition {
                 seeThat("the displayed label the login form", LoginAndRegisterCompare.lblLoginForm(), equalTo(compare.get("lbl_login_form")))
         );
 
+    }
+
+    @When("user logs out")
+    public void userLogsOut() {
+        theActorInTheSpotlight().attemptsTo(Logout.theAplicationBonBonite());
+    }
+    @Then("the user should see the login and registration section")
+    public void theUserShouldSeeTheLoginAndRegistrationSection(Map<String,String> compare) {
+        theActorInTheSpotlight().should(
+                seeThat("the displayed label the register form", LoginAndRegisterCompare.lblRegisterForm(), equalTo(compare.get("lbl_register"))),
+                seeThat("the displayed label the login form", LoginAndRegisterCompare.lblLoginForm(), equalTo(compare.get("lbl_login")))
+        );
     }
 
 

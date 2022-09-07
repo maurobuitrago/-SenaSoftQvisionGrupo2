@@ -3,6 +3,7 @@ Feature: View Product
   I would like to see the product information
   to know the characteristics of this product.
 
+  @CP_023_PRODUCT_VIEW
   Scenario Outline: Correct display of product information
     Given that the user is in the products section
     When select a product

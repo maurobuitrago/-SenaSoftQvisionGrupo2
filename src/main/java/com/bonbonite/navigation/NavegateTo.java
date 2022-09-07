@@ -19,4 +19,11 @@ public class NavegateTo {
                 Open.browserOn().the(BonBoniteGoToProductsSection.class)
         );
     }
+
+    public static Performable theBonBoniteGoToAllProductsShoes(){
+        return Task.where(
+                "the client pablo opens Bon Bonite products section",
+                Open.url("https://www.bon-bonite.com/categoria-producto/zapatos-mujer/")
+        );
+    }
 }
