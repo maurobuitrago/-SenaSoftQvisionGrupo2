@@ -6,11 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/myaccount/login.feature",
+        features = "src/test/resources/features/product/buyproduct.feature",
         glue = "com.bonbonite.stepsdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@CP_003_Login_Successful"
-
+        snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class LoginRunner {
+public class BuyProductRunner {
 }
