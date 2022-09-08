@@ -33,4 +33,11 @@ public class NavegateTo {
                 Open.url("https://www.bon-bonite.com/mi-cuenta/edit-account/")
         );
     }
+
+    public static Performable theBonBoniteGoToCartList(){
+        return Task.where(
+                "the client pablo opens Bon Bonite products section",
+                Open.url("https://www.bon-bonite.com/carrito/")
+        );
+    }
 }
