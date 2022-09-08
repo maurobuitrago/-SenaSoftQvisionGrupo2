@@ -27,10 +27,10 @@ public class NavegateTo {
         );
     }
 
-    public static Performable theBonBoniteGoToCartList(){
+    public static Performable theBonBoniteGoToAllDetailsCountSection(){
         return Task.where(
-                "the client pablo opens Bon Bonite cart list section",
-                Open.url("https://www.bon-bonite.com/carrito/")
+                "the client pablo opens Bon Bonite products section",
+                Open.url("https://www.bon-bonite.com/mi-cuenta/edit-account/")
         );
     }
 }
