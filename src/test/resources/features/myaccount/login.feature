@@ -26,7 +26,7 @@ Feature: Login
     Examples:
       | document_number | password           | lbl_error | lbl_login_form |
       | 105673fg176     | Coldfddfmbia654734 | Error     | acceder        |
-      | 1005673114      | millofdfarios2020  | Error     | acceder        |
+
 
   @CP_031_Logout_Successful
   Scenario Outline: Logout successful

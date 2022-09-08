@@ -26,4 +26,11 @@ public class NavegateTo {
                 Open.url("https://www.bon-bonite.com/categoria-producto/zapatos-mujer/")
         );
     }
+
+    public static Performable theBonBoniteGoToAllDetailsCountSection(){
+        return Task.where(
+                "the client pablo opens Bon Bonite products section",
+                Open.url("https://www.bon-bonite.com/mi-cuenta/edit-account/")
+        );
+    }
 }

@@ -23,7 +23,7 @@ public class ShoppingCartStepDefinition {
     }
     @When("add products to the shopping cart")
     public void addProductsToTheShoppingCart() {
-        //theActorInTheSpotlight().attemptsTo();
+
     }
     @Then("the user should see the products in the shopping cart")
     public void theUserShouldSeeTheProductsInTheShoppingCart() {
